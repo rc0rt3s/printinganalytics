@@ -78,7 +78,7 @@ body{font-family:Arial,sans-serif;font-size:14px;line-height:1.6;color:#2C2C2A;b
     </tbody>
   </table>
   <p class="note">¹ 2022 click data covers October–December only; ream data not available for that period. ² 2026 is year to date (8 sessions); annualised projection ≈ 1,163,082 clicks, approximately 8% below the 2024–25 average.</p>
-  <p class="note" style="margin-top:.4rem">V800 colour machine output is recorded separately from the Vario 140/130 figures above. Clicks per ream ratio consistent at approximately 800 across 2024–2026.</p>
+  <p class="note" style="margin-top:.4rem">Colour machine output (C750 until November 2023, V800 from November 2023) is recorded separately from the Vario 140/130 figures above. Clicks per ream ratio consistent at approximately 800 across 2024–2026.</p>
 
   <br>
   <p class="chart-label">Annual click volumes — Vario 140 + Vario 130 combined (2023–2026 YTD)</p>
@@ -99,10 +99,10 @@ body{font-family:Arial,sans-serif;font-size:14px;line-height:1.6;color:#2C2C2A;b
   <div class="chart-wrap" style="height:420px"><canvas id="meetingAvg" role="img" aria-label="Horizontal bar chart. MSC highest at 164,756, followed by Assembly at 123,758, MEPC at 111,507.">MSC: 164,756; A: 123,758; MEPC: 111,507; CCC: 103,067; HTW: 95,582; NCSR: 76,735; PPR: 76,118; III: 75,624; SSE: 61,985; FAL: 50,876; TC: 49,734; SDC: 44,704; LEG: 40,990; COUNCIL: 31,491; LC: 25,474.</canvas></div>
 
   <table class="data-table" style="margin-top:1.25rem">
-    <thead><tr><th>Meeting type</th><th class="r">Sessions counted</th><th class="r">Total clicks</th><th class="r">Avg clicks / session</th></tr></thead>
+    <thead><tr><th>IMO meeting</th><th class="r">Sessions counted</th><th class="r">Total clicks</th><th class="r">Avg clicks / session</th></tr></thead>
     <tbody id="mtTbody"></tbody>
   </table>
-  <p class="note">Assembly reflects one session only (A 33 in 2023; A 34 in 2025) and should be read accordingly. MEPC ES.2 (extraordinary session, 2025) is included in the MEPC row.</p>
+  <p class="note">Assembly reflects two sessions (A 33 in 2023 and A 34 in 2025), as the Assembly meets once every two years. MEPC ES.2 (extraordinary session, 2025) is included in the MEPC row.</p>
   <p class="note" style="margin-top:.4rem">The high Assembly click average relative to its low working paper output (typically two WPs per session) reflects the volume driven by other categories: General Statements are printed in full pre-session on the B/W machines, the interpreter allocation is larger than for most committees, and Assembly sessions require multilingual briefs — all of which contribute substantially to total clicks independently of working paper volume.</p>
 </div>
 
@@ -110,21 +110,50 @@ body{font-family:Arial,sans-serif;font-size:14px;line-height:1.6;color:#2C2C2A;b
 
 <div class="section">
   <p class="section-number">Table 3</p>
-  <p class="section-title">V800 colour machine output (2024–2026)</p>
-  <p class="section-source">Source: Clicks.xlsx — V800 columns in each year sheet (serial number 4FA00833). The V800 is used for both meeting and non-meeting colour output: brochures, flyers, divisional and promotional materials. All figures are excluded from the Vario 140/130 click totals in Table 1. No V800 data is available for 2022 or 2023 (the C750 colour machine was in use during that period).</p>
+  <p class="section-title">Colour printing output — C750 and V800 (2022–2026)</p>
+  <p class="section-source">Source: Clicks.xlsx — colour machine columns in each year sheet. C750 (quarterly billing data) operated until November 2023; V800 (serial number 4FA00833, job-level data) installed November 2023. All figures are excluded from the Vario 140/130 click totals in Table 1. 2022 figures cover October–December only. 2023 reflects C750 output January–November (84,826 clicks) and V800 output November–December (18,105 clicks). 2024 and 2025 are full-year V800 figures. 2026 is year to date (January–May, V800).</p>
 
-  <div class="metric-row" style="grid-template-columns:repeat(3,1fr)">
-    <div class="metric"><p class="lbl">2024 V800 clicks</p><p class="val">66,430</p><p class="sub">full year</p></div>
-    <div class="metric"><p class="lbl">2025 V800 clicks</p><p class="val">35,788</p><p class="sub">full year</p></div>
-    <div class="metric"><p class="lbl">2026 V800 clicks</p><p class="val">8,175</p><p class="sub">Jan–May YTD</p></div>
+  <div class="metric-row" style="grid-template-columns:repeat(5,1fr)">
+    <div class="metric"><p class="lbl">2022 C750 clicks</p><p class="val">2,036</p><p class="sub">Oct–Dec only</p></div>
+    <div class="metric"><p class="lbl">2023 colour clicks</p><p class="val">102,931</p><p class="sub">C750 + V800</p></div>
+    <div class="metric"><p class="lbl">2024 V800 clicks</p><p class="val">132,093</p><p class="sub">full year</p></div>
+    <div class="metric"><p class="lbl">2025 V800 clicks</p><p class="val">71,501</p><p class="sub">full year</p></div>
+    <div class="metric"><p class="lbl">2026 V800 clicks</p><p class="val">16,030</p><p class="sub">Jan–May YTD</p></div>
   </div>
 
-  <p class="chart-label" style="margin-top:.75rem">V800 annual click volumes</p>
-  <div class="chart-wrap" style="height:160px"><canvas id="v800Chart" role="img" aria-label="V800 colour machine clicks: 2024: 66,430; 2025: 35,788; 2026 YTD: 8,175.">2024: 66,430; 2025: 35,788; 2026 YTD: 8,175.</canvas></div>
+  <p class="chart-label" style="margin-top:.75rem">Colour machine annual click volumes (C750 + V800)</p>
+  <div class="chart-wrap" style="height:160px"><canvas id="v800Chart" role="img" aria-label="Colour machine clicks: 2022: 2,036; 2023: 102,931; 2024: 132,093; 2025: 71,501; 2026 YTD: 16,030.">2022: 2,036 (C750); 2023: 102,931 (C750+V800); 2024: 132,093; 2025: 71,501; 2026 YTD: 16,030.</canvas></div>
 
   <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.5rem;margin-top:1.5rem">
     <div>
-      <p class="yr-label">2024</p>
+      <p class="yr-label">2022 (C750 — Oct–Dec)</p>
+      <table class="data-table">
+        <thead><tr><th>Job / purpose</th><th class="r">Clicks</th><th class="r">Share</th></tr></thead>
+        <tbody>
+      <tr><td style="padding-left:1.5rem;color:#5F5E5A">TC 72 handout</td><td class="r">243</td><td class="r">11.9%</td></tr>
+      <tr><td style="padding-left:1.5rem;color:#5F5E5A">Polar Seminar</td><td class="r">1,624</td><td class="r">79.8%</td></tr>
+      <tr><td style="padding-left:1.5rem;color:#5F5E5A">C 128</td><td class="r">169</td><td class="r">8.3%</td></tr>
+      <tr class="total"><td>Total</td><td class="r">2,036</td><td class="r">100%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <p class="yr-label">2023 (C750 / V800)</p>
+      <table class="data-table">
+        <thead><tr><th>Job / purpose</th><th class="r">Clicks</th><th class="r">Share</th></tr></thead>
+        <tbody>
+      <tr><td style="padding-left:1.5rem;color:#5F5E5A">Oct–Nov (C750)</td><td class="r">40,092</td><td class="r">46.4%</td></tr>
+      <tr><td style="padding-left:1.5rem;color:#5F5E5A">Jul–Sep (C750)</td><td class="r">31,441</td><td class="r">36.4%</td></tr>
+      <tr><td style="padding-left:1.5rem;color:#5F5E5A">Apr–Jun (C750)</td><td class="r">6,921</td><td class="r">8.0%</td></tr>
+      <tr><td style="padding-left:1.5rem;color:#5F5E5A">Jan–Mar (C750)</td><td class="r">6,372</td><td class="r">7.4%</td></tr>
+      <tr><td style="padding-left:1.5rem;color:#5F5E5A">A 33 – Assembly (V800, Nov–Dec)</td><td class="r">1,661</td><td class="r">1.9%</td></tr>
+      <tr class="total"><td>Total</td><td class="r">86,487</td><td class="r">100%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <p class="yr-label">2024 (V800)</p>
       <table class="data-table">
         <thead><tr><th>Job / purpose</th><th class="r">Clicks</th><th class="r">Share</th></tr></thead>
         <tbody>
@@ -138,7 +167,7 @@ body{font-family:Arial,sans-serif;font-size:14px;line-height:1.6;color:#2C2C2A;b
       </table>
     </div>
     <div>
-      <p class="yr-label">2025</p>
+      <p class="yr-label">2025 (V800)</p>
       <table class="data-table">
         <thead><tr><th>Job / purpose</th><th class="r">Clicks</th><th class="r">Share</th></tr></thead>
         <tbody>
@@ -154,7 +183,7 @@ body{font-family:Arial,sans-serif;font-size:14px;line-height:1.6;color:#2C2C2A;b
       </table>
     </div>
     <div>
-      <p class="yr-label">2026 (YTD)</p>
+      <p class="yr-label">2026 YTD (V800)</p>
       <table class="data-table">
         <thead><tr><th>Job / purpose</th><th class="r">Clicks</th><th class="r">Share</th></tr></thead>
         <tbody>
@@ -162,13 +191,15 @@ body{font-family:Arial,sans-serif;font-size:14px;line-height:1.6;color:#2C2C2A;b
       <tr><td style="padding-left:1.5rem;color:#5F5E5A">HTW</td><td class="r">2,208</td><td class="r">27.0%</td></tr>
       <tr><td style="padding-left:1.5rem;color:#5F5E5A">HRS</td><td class="r">1,173</td><td class="r">14.3%</td></tr>
       <tr><td style="padding-left:1.5rem;color:#5F5E5A">C/ES.36</td><td class="r">736</td><td class="r">9.0%</td></tr>
-          <tr class="total"><td>Total</td><td class="r">8,175</td><td class="r">100%</td></tr>
+      <tr class="total"><td>Total</td><td class="r">8,175</td><td class="r">100%</td></tr>
         </tbody>
       </table>
     </div>
   </div>
 
 </div>
+
+
 
 
 <div class="section">
@@ -195,6 +226,8 @@ const GRID='rgba(0,0,0,0.07)',TICK='#5F5E5A';
 
 function acTooltipLabel(ctx){
   if(ctx.dataset.label==='2026 projection (8 remaining sessions)') return ' Projected full year: ~1,163,082 clicks';
+  if(ctx.dataset.label==='Reams (projection)'&&ctx.dataIndex===3) return ' Reams (projected full year): 1,453.86';
+  if(ctx.dataset.label==='Reams (projection)'&&ctx.dataIndex===2) return null;
   return ' '+ctx.dataset.label+': '+ctx.parsed.y.toLocaleString();
 }
 function acReamsProjY(chart){
@@ -210,64 +243,35 @@ function acYTick(v){
 new Chart(document.getElementById('annualClicks'),{type:'bar',data:{labels:['2023','2024','2025','2026 YTD'],datasets:[
   {label:'Clicks (actual)',data:[1351585,1265602,1272074,581541],backgroundColor:[BLUE,BLUE,BLUE,BLUE],borderRadius:0,barPercentage:.5,categoryPercentage:.7,yAxisID:'y',stack:'clicks'},
   {label:'2026 projection (8 remaining sessions)',data:[null,null,null,581541],backgroundColor:'rgba(24,95,165,0.18)',borderColor:BLUE,borderWidth:1.5,borderRadius:4,barPercentage:.5,categoryPercentage:.7,yAxisID:'y',stack:'clicks'},
-  {label:'Reams',data:[1696.64,1582.59,1608.72,726.93],backgroundColor:'transparent',borderColor:TEAL,borderWidth:2.5,type:'line',pointRadius:6,pointBackgroundColor:TEAL,yAxisID:'y2'}
-]},options:{responsive:true,maintainAspectRatio:false,plugins:{tooltip:{callbacks:{label:acTooltipLabel}},legend:{display:true,labels:{boxWidth:12,boxHeight:12,padding:14,font:{size:11},color:TICK}}},scales:{x:{grid:{color:GRID},ticks:{color:TICK,font:{size:12}},stacked:true},y:{grid:{color:GRID},ticks:{color:TICK,font:{size:11},callback:acYTick},title:{display:true,text:'Clicks',color:TICK,font:{size:10}},stacked:true},y2:{position:'right',grid:{display:false},ticks:{color:TEAL,font:{size:11}},title:{display:true,text:'Reams',color:TEAL,font:{size:10}}}}},plugins:[{
+  {label:'Reams',data:[1696.64,1582.59,1608.72,null],backgroundColor:'transparent',borderColor:TEAL,borderWidth:2.5,type:'line',pointRadius:6,pointBackgroundColor:TEAL,yAxisID:'y2',spanGaps:false},{label:'Reams (projection)',data:[null,null,1608.72,1453.86],backgroundColor:'transparent',borderColor:TEAL,borderWidth:2.5,borderDash:[6,4],type:'line',pointRadius:[0,0,0,6],pointBackgroundColor:TEAL,yAxisID:'y2',spanGaps:false}
+]},options:{responsive:true,maintainAspectRatio:false,plugins:{tooltip:{callbacks:{label:acTooltipLabel}},legend:{display:true,labels:{boxWidth:12,boxHeight:12,padding:14,font:{size:11},color:TICK,filter:function(item){return item.text!=='Reams (projection)';}}}},scales:{x:{grid:{color:GRID},ticks:{color:TICK,font:{size:12}},stacked:true},y:{grid:{color:GRID},ticks:{color:TICK,font:{size:11},callback:acYTick},title:{display:true,text:'Clicks',color:TICK,font:{size:10}},stacked:true},y2:{position:'right',grid:{display:false},ticks:{color:TEAL,font:{size:11}},title:{display:true,text:'Reams',color:TEAL,font:{size:10}}}}},plugins:[{
   id:'projLabel',
   afterDraw:function(chart){
     var ctx2=chart.ctx;
     ctx2.save();
 
-    // -- Clicks projection label --
+    // -- Clicks projection label (inside segment) --
     var ds1=chart.getDatasetMeta(1);
     if(ds1&&ds1.data&&ds1.data[3]){
       var bar=ds1.data[3];
-      if(bar&&bar.x){
+      var yScale=chart.scales['y'];
+      if(bar&&bar.x&&yScale){
+        var segBottom=yScale.getPixelForValue(581541);
+        var midY=(bar.y+segBottom)/2;
         ctx2.font='bold 10px Arial';
-        ctx2.fillStyle='#185FA5';
+        ctx2.fillStyle='rgba(24,95,165,0.85)';
         ctx2.textAlign='center';
-        ctx2.textBaseline='bottom';
-        ctx2.fillText('Projection',bar.x,bar.y-4);
+        ctx2.textBaseline='middle';
+        ctx2.fillText('Projection',bar.x,midY);
       }
     }
 
-    // -- Reams dashed projection line + label --
-    var dsReams=chart.getDatasetMeta(2);
-    if(dsReams&&dsReams.data&&dsReams.data[3]){
-      var realPt=dsReams.data[3];
-      var y2Scale=chart.scales['y2'];
-      if(realPt&&realPt.x&&y2Scale){
-        var projY=y2Scale.getPixelForValue(1453.86);
-        // Dashed line from real point up to projected value
-        ctx2.beginPath();
-        ctx2.setLineDash([6,4]);
-        ctx2.strokeStyle=TEAL;
-        ctx2.lineWidth=2;
-        ctx2.moveTo(realPt.x,realPt.y);
-        ctx2.lineTo(realPt.x,projY);
-        ctx2.stroke();
-        ctx2.setLineDash([]);
-        // Projected point marker
-        ctx2.beginPath();
-        ctx2.arc(realPt.x,projY,5,0,2*Math.PI);
-        ctx2.fillStyle=TEAL;
-        ctx2.fill();
-        ctx2.strokeStyle='#fff';
-        ctx2.lineWidth=1.5;
-        ctx2.stroke();
-        // Label
-        ctx2.font='bold 10px Arial';
-        ctx2.fillStyle=TEAL;
-        ctx2.textAlign='center';
-        ctx2.textBaseline='bottom';
-        ctx2.fillText('Projection',realPt.x,projY-8);
-      }
-    }
 
     ctx2.restore();
   }
 }]});
 
-const mtData=[['MSC',5,823780,164756],['A',1,123758,123758],['MEPC',7,780549,111507],['CCC',3,309201,103067],['HTW',4,382330,95582],['III',3,226871,75624],['PPR',4,304353,76118],['NCSR',3,230203,76735],['SSE',3,179660,61985],['FAL',3,165138,55046],['TC',3,149205,49734],['SDC',3,126969,44704],['LEG',3,122952,40984],['COUNCIL',6,188946,31491],['LC',3,76421,25474]];
+const mtData=[['MEPC',4,892059,223015],['MSC',3,637869,212623],['A',2,247515,123758],['CCC',3,309202,103067],['HTW',4,382328,95582],['NCSR',3,230206,76735],['PPR',4,304473,76118],['III',3,226871,75624],['SSE',4,247939,61985],['COUNCIL',4,220438,55110],['FAL',4,203503,50876],['TC',3,149202,49734],['SDC',4,178818,44704],['LEG',4,163958,40990],['LC',3,76421,25474]];
 const tbody=document.getElementById('mtTbody');
 mtData.forEach(([m,s,t,a])=>{const tr=document.createElement('tr');tr.innerHTML=`<td>${m}</td><td class="r">${s}</td><td class="r">${t.toLocaleString()}</td><td class="r">${a.toLocaleString()}</td>`;tbody.appendChild(tr);});
 
@@ -282,7 +286,7 @@ function v800YTick(v){
   if(v>=1000) return (v/1000).toFixed(0)+'k';
   return v;
 }
-new Chart(document.getElementById('v800Chart'),{type:'bar',data:{labels:['2024','2025','2026 YTD'],datasets:[{label:'V800 clicks',data:[66430,35788,8175],backgroundColor:[CORAL,CORAL,'rgba(216,90,48,0.4)'],borderRadius:4,barPercentage:.5,categoryPercentage:.65}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:{color:GRID},ticks:{color:TICK,font:{size:11}}},y:{grid:{color:GRID},ticks:{color:TICK,font:{size:11},callback:v800YTick}}}}});
+new Chart(document.getElementById('v800Chart'),{type:'bar',data:{labels:['2022','2023','2024','2025','2026 YTD'],datasets:[{label:'Colour clicks',data:[2036,102931,132093,71501,16030],backgroundColor:['rgba(216,90,48,0.25)','rgba(216,90,48,0.55)',CORAL,CORAL,'rgba(216,90,48,0.4)'],borderRadius:4,barPercentage:.5,categoryPercentage:.65}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:{color:GRID},ticks:{color:TICK,font:{size:11}}},y:{grid:{color:GRID},ticks:{color:TICK,font:{size:11},callback:v800YTick}}}}});
 
 //--></script>
 </body>
