@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DS/PR/2026/01 — Annex: Data Sources and Supporting Tables</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;font-size:14px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;padding:2rem 1.5rem}
+.page{max-width:860px;margin:0 auto;background:#fff;border-radius:10px;padding:2.75rem 2.75rem 3.5rem;border:.5px solid #D3D1C7}
+.doc-eyebrow{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#888780;margin-bottom:.4rem}
+.doc-title{font-size:22px;font-weight:600;color:#1F3864;margin-bottom:.25rem}
+.doc-sub{font-size:13px;color:#5F5E5A;padding-bottom:1.25rem;border-bottom:1.5px solid #1F3864;margin-bottom:2rem}
+.section{margin-bottom:3rem}
+.section-number{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:#888780;margin-bottom:.25rem}
+.section-title{font-size:15px;font-weight:600;color:#2C2C2A;padding-bottom:.55rem;border-bottom:.5px solid #D3D1C7;margin-bottom:.5rem}
+.section-source{font-size:11.5px;color:#888780;margin-bottom:1.25rem;font-style:italic;padding-left:.6rem;border-left:2px solid #E0DED6}
+.metric-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:1.5rem}
+.metric{background:#F7F6F2;border-radius:8px;padding:.8rem 1rem;border:.5px solid #E0DED6}
+.metric .lbl{font-size:10.5px;color:#5F5E5A;margin-bottom:.3rem}
+.metric .val{font-size:20px;font-weight:600;color:#1F3864;line-height:1.1}
+.metric .sub{font-size:10px;color:#888780;margin-top:.2rem}
+.chart-label{font-size:12px;color:#5F5E5A;margin-bottom:.4rem;font-weight:600;letter-spacing:.02em}
+.chart-wrap{position:relative;width:100%}
+.chart-two{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:1.5rem}
+.legend{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:.5rem;font-size:11.5px;color:#5F5E5A}
+.leg-sq{width:10px;height:10px;border-radius:2px;display:inline-block;margin-right:4px;vertical-align:2px}
+.data-table{width:100%;border-collapse:collapse;font-size:12.5px;margin-bottom:1rem}
+.data-table th{text-align:left;font-size:10.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#888780;padding:6px 10px;border-bottom:1px solid #D3D1C7;white-space:nowrap}
+.data-table th.r{text-align:right}
+.data-table td{padding:6px 10px;border-bottom:.5px solid #E8E6DE;color:#2C2C2A;vertical-align:middle}
+.data-table td.r{text-align:right;font-variant-numeric:tabular-nums}
+.data-table tr.total td{font-weight:600;border-top:1px solid #D3D1C7;border-bottom:none;background:#FAFAF7}
+.data-table tr.avg td{font-style:italic;color:#5F5E5A;font-size:11.5px;background:#FAFAF7}
+.data-table tr:last-child td{border-bottom:none}
+.bar-cell{display:flex;align-items:center;gap:8px}
+.bar-bg{flex:1;height:5px;background:#E8E6DE;border-radius:3px;overflow:hidden;min-width:50px}
+.bar-fill{height:100%;border-radius:3px}
+.bar-val{font-size:11.5px;font-variant-numeric:tabular-nums;white-space:nowrap;min-width:30px;text-align:right;color:#5F5E5A}
+.note{font-size:11px;color:#888780;margin-top:.5rem;padding-left:.65rem;border-left:2px solid #E0DED6;line-height:1.5}
+.yr-label{font-size:13px;font-weight:600;margin-bottom:.4rem;margin-top:1.25rem;color:#1F3864;letter-spacing:.01em}
+.yr-label:first-child{margin-top:0}
+</style>
+</head>
+<body>
+<div class="page">
+
+<p class="doc-eyebrow">DS/PR/2026/01 — Annex</p>
+<h1 class="doc-title">Data sources and supporting tables</h1>
+<p class="doc-sub">All figures referenced in the report, reproduced from source data with full attribution. Machine click data source: Clicks.xlsx (Meeting Clicks summary sheet). Working paper data sources: WP_2024.xlsx, WP_2025.xlsx, WPs_2026.xlsx. Session counts source: Printing_Status_Tables_2022–2026.</p>
+
+<div class="section">
+  <p class="section-number">Table 1</p>
+  <p class="section-title">Annual Printing Room volumes — machine clicks, paper stock and sessions (2022–2026)</p>
+  <p class="section-source">Source: Clicks.xlsx — Meeting Clicks summary sheet (click totals and ream totals). Session counts from Printing_Status_Tables_2022–2026. Pallets calculated at 200 reams per pallet. 2022 click data covers October–December only (partial year). 2026 is year to date (8 sessions, January–May).</p>
+
+  <div class="metric-row">
+    <div class="metric"><p class="lbl">2023 clicks (Vario 140+130)</p><p class="val">1,351,585</p><p class="sub">17 sessions · full year</p></div>
+    <div class="metric"><p class="lbl">2024 clicks (Vario 140+130)</p><p class="val">1,265,602</p><p class="sub">17 sessions · full year</p></div>
+    <div class="metric"><p class="lbl">2025 clicks (Vario 140+130)</p><p class="val">1,272,074</p><p class="sub">16 sessions · full year</p></div>
+    <div class="metric"><p class="lbl">2026 clicks (Vario 140+130)</p><p class="val">581,541</p><p class="sub">8 sessions · Jan–May YTD</p></div>
+  </div>
+
+  <table class="data-table">
+    <thead><tr><th>Year</th><th class="r">Sessions</th><th class="r">Clicks (Vario 140+130)</th><th class="r">Reams</th><th class="r">Pallets</th><th class="r">Avg clicks / session</th></tr></thead>
+    <tbody>
+      <tr><td>2022 ¹</td><td class="r">5</td><td class="r">~182,000</td><td class="r">—</td><td class="r">—</td><td class="r">~36,400</td></tr>
+      <tr><td>2023</td><td class="r">17</td><td class="r">1,351,585</td><td class="r">1,696.64</td><td class="r">8.48</td><td class="r">79,505</td></tr>
+      <tr><td>2024</td><td class="r">17</td><td class="r">1,265,602</td><td class="r">1,582.59</td><td class="r">7.91</td><td class="r">74,447</td></tr>
+      <tr><td>2025</td><td class="r">16</td><td class="r">1,272,074</td><td class="r">1,608.72</td><td class="r">8.04</td><td class="r">79,505</td></tr>
+      <tr><td>2026 ²</td><td class="r">8</td><td class="r">581,541</td><td class="r">726.93</td><td class="r">3.63</td><td class="r">72,693</td></tr>
+    </tbody>
+  </table>
+  <p class="note">¹ 2022 click data covers October–December only; ream data not available for that period. ² 2026 is year to date (8 sessions); annualised projection ≈ 1,163,082 clicks, approximately 8% below the 2024–25 average.</p>
+  <p class="note" style="margin-top:.4rem">V800 colour machine output is recorded separately and excluded from all figures above. Clicks per ream ratio consistent at approximately 800 across 2024–2026.</p>
+
+  <br>
+  <p class="chart-label">Annual click volumes — Vario 140 + Vario 130 combined (2023–2026 YTD)</p>
+  <div class="legend">
+    <span><span class="leg-sq" style="background:#185FA5"></span>Clicks (left axis)</span>
+    <span><span class="leg-sq" style="background:#1D9E75"></span>Reams (right axis, line)</span>
+  </div>
+  <div class="chart-wrap" style="height:230px"><canvas id="annualClicks" role="img" aria-label="Bar chart of annual click volumes 2023 to 2026. 2023 highest at 1,351,585; 2024 and 2025 stable near 1,265,000–1,272,000; 2026 partial year at 581,541.">2023: 1,351,585; 2024: 1,265,602; 2025: 1,272,074; 2026 YTD: 581,541.</canvas></div>
+</div>
+
+<div class="section">
+  <p class="section-number">Table 2</p>
+  <p class="section-title">Average clicks per session by meeting type — all available years combined (2023–2026)</p>
+  <p class="section-source">Source: Clicks.xlsx — Meeting Clicks summary sheet (per-session values). Averages computed across all sessions of each meeting type where data are available. Assembly (A) sessions occur once every two years; MSC and MEPC hold two sessions per year in non-Assembly years.</p>
+
+  <p class="chart-label">Average clicks per session by meeting type</p>
+  <div class="legend"><span><span class="leg-sq" style="background:#1D9E75"></span>Avg clicks per session</span></div>
+  <div class="chart-wrap" style="height:420px"><canvas id="meetingAvg" role="img" aria-label="Horizontal bar chart. MSC highest at 164,756, followed by Assembly at 123,758, MEPC at 111,507.">MSC: 164,756; A: 123,758; MEPC: 111,507; CCC: 103,067; HTW: 95,582; NCSR: 76,735; PPR: 76,118; III: 75,624; SSE: 61,985; FAL: 50,876; TC: 49,734; SDC: 44,704; LEG: 40,990; COUNCIL: 31,491; LC: 25,474.</canvas></div>
+
+  <table class="data-table" style="margin-top:1.25rem">
+    <thead><tr><th>Meeting type</th><th class="r">Sessions counted</th><th class="r">Total clicks</th><th class="r">Avg clicks / session</th></tr></thead>
+    <tbody id="mtTbody"></tbody>
+  </table>
+  <p class="note">Assembly reflects one session only (A 33 in 2023; A 34 in 2025) and should be read accordingly. MEPC ES.2 (extraordinary session, 2025) is included in the MEPC row.</p>
+</div>
+
+<div class="section">
+  <p class="section-number">Table 3</p>
+  <p class="section-title">Working paper volumes by session — 2024, 2025 and 2026</p>
+  <p class="section-source">Source: WP_2024.xlsx, WP_2025.xlsx, WPs_2026.xlsx. Pages and document counts extracted from Symbol 1 column. Corrections applied: LEG 112 (2025) corrected to 6 WPs / 65 pages; MEPC 84 moved from 2025 to 2026 and merged (463 pages, 11 WPs). MEPC ES.2 retained separately as an extraordinary session.</p>
+
+  <div id="wpTables"></div>
+
+  <br>
+  <p class="chart-label">Working paper pages and document count per session — 2024</p>
+  <div class="legend"><span><span class="leg-sq" style="background:#185FA5"></span>Pages</span><span><span class="leg-sq" style="background:#1D9E75"></span>No. of WPs (right axis)</span></div>
+  <div class="chart-wrap" style="height:220px"><canvas id="wp2024" role="img" aria-label="2024 WP sessions. MSC 108 highest at 1,111 pages.">C132 53pp, C133 49pp, CCC10 464pp, FAL48 326pp, HTW10 235pp, III10 592pp, LC46 85pp, LEG111 89pp, MEPC81 363pp, MEPC82 372pp, MSC108 1111pp, MSC109 553pp, NCSR11 227pp, PPR11 226pp, SDC10 176pp, SSE10 162pp, TC74 92pp.</canvas></div>
+
+  <br>
+  <p class="chart-label">Working paper pages and document count per session — 2025</p>
+  <div class="legend"><span><span class="leg-sq" style="background:#185FA5"></span>Pages</span><span><span class="leg-sq" style="background:#1D9E75"></span>No. of WPs (right axis)</span></div>
+  <div class="chart-wrap" style="height:220px"><canvas id="wp2025" role="img" aria-label="2025 WP sessions. MSC 110 highest at 849 pages.">A34 149pp, C134 134pp, C135 30pp, CCC11 315pp, FAL49 197pp, HTW11 781pp, III11 352pp, LC47 81pp, LEG112 65pp, MEPC83 484pp, MEPCES2 204pp, MSC110 849pp, NCSR12 299pp, PPR12 226pp, SDC11 318pp, SSE11 202pp.</canvas></div>
+
+  <br>
+  <p class="chart-label">Working paper pages and document count per session — 2026 (year to date)</p>
+  <div class="legend"><span><span class="leg-sq" style="background:#185FA5"></span>Pages</span><span><span class="leg-sq" style="background:#1D9E75"></span>No. of WPs (right axis)</span></div>
+  <div class="chart-wrap" style="height:200px"><canvas id="wp2026" role="img" aria-label="2026 WP sessions. MSC 111 highest at 917 pages; HTW 12 at 793.">FAL50 181pp 8WP, HTW12 793pp 16WP, LEG113 68pp 5WP, MEPC84 463pp 11WP, MSC111 917pp 19WP, PPR13 239pp 7WP, SDC12 284pp 7WP, SSE12 268pp 6WP.</canvas></div>
+</div>
+
+<div class="section">
+  <p class="section-number">Table 4</p>
+  <p class="section-title">Working paper summary averages by year</p>
+  <p class="section-source">Source: derived from WP_2024.xlsx, WP_2025.xlsx, WPs_2026.xlsx. 2026 figures are year to date (8 sessions, January–May). The increase in 2026 per-session averages is partly attributable to increased Member State submissions.</p>
+
+  <table class="data-table">
+    <thead><tr><th>Year</th><th class="r">Sessions</th><th class="r">Total WPs</th><th class="r">Total pages</th><th class="r">Avg WPs / session</th><th class="r">Avg pages / session</th><th class="r">Avg pages / WP</th></tr></thead>
+    <tbody>
+      <tr><td>2024</td><td class="r">17</td><td class="r">131</td><td class="r">5,175</td><td class="r">7.7</td><td class="r">304</td><td class="r">39.5</td></tr>
+      <tr><td>2025</td><td class="r">16</td><td class="r">117</td><td class="r">4,686</td><td class="r">7.3</td><td class="r">293</td><td class="r">40.1</td></tr>
+      <tr><td>2026 YTD</td><td class="r">8</td><td class="r">79</td><td class="r">3,213</td><td class="r">9.9</td><td class="r">402</td><td class="r">40.7</td></tr>
+    </tbody>
+  </table>
+
+  <div class="chart-two">
+    <div>
+      <p class="chart-label">Avg WP pages per session</p>
+      <div class="legend"><span><span class="leg-sq" style="background:#D85A30"></span>Pages / session</span></div>
+      <div class="chart-wrap" style="height:165px"><canvas id="wpAvgPages" role="img" aria-label="2024: 304; 2025: 293; 2026 YTD: 402.">2024: 304; 2025: 293; 2026 YTD: 402.</canvas></div>
+    </div>
+    <div>
+      <p class="chart-label">Avg WPs per session</p>
+      <div class="legend"><span><span class="leg-sq" style="background:#1D9E75"></span>WPs / session</span></div>
+      <div class="chart-wrap" style="height:165px"><canvas id="wpAvgCount" role="img" aria-label="2024: 7.7; 2025: 7.3; 2026 YTD: 9.9.">2024: 7.7; 2025: 7.3; 2026 YTD: 9.9.</canvas></div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <p class="section-number">Table 5</p>
+  <p class="section-title">Key operational ratios</p>
+  <p class="section-source">Source: derived from Clicks.xlsx. These ratios underpin the structural stability argument in the report: annual totals remain consistent because meeting calendars and printing formulas are fixed, not because of active monitoring controls.</p>
+
+  <table class="data-table">
+    <thead><tr><th>Metric</th><th class="r">2023</th><th class="r">2024</th><th class="r">2025</th><th class="r">2026 YTD</th></tr></thead>
+    <tbody>
+      <tr><td>Clicks per ream</td><td class="r">797</td><td class="r">800</td><td class="r">791</td><td class="r">800</td></tr>
+      <tr><td>Reams per session</td><td class="r">99.8</td><td class="r">93.1</td><td class="r">100.5</td><td class="r">90.9</td></tr>
+      <tr><td>Clicks per session</td><td class="r">79,505</td><td class="r">74,447</td><td class="r">79,505</td><td class="r">72,693</td></tr>
+      <tr><td>V800 colour output</td><td class="r" colspan="4" style="color:#888780;font-style:italic">Reported separately — excluded from all Vario 140/130 figures above</td></tr>
+    </tbody>
+  </table>
+  <p class="note">The clicks-per-ream ratio of approximately 800 is consistent across all measured years, reflecting a stable mix of single- and double-sided output. This allows ream consumption to be projected directly from click totals for paper ordering purposes.</p>
+</div>
+
+</div>
+
+<script>
+const BLUE='#185FA5',BLUE_L='#B5D4F4',TEAL='#1D9E75',TEAL_L='#9FE1CB',CORAL='#D85A30',AMBER='#BA7517';
+const GRID='rgba(0,0,0,0.07)',TICK='#5F5E5A';
+
+new Chart(document.getElementById('annualClicks'),{type:'bar',data:{labels:['2023','2024','2025','2026 YTD'],datasets:[{label:'Clicks',data:[1351585,1265602,1272074,581541],backgroundColor:[BLUE,BLUE,BLUE,BLUE_L],borderRadius:4,barPercentage:.5,categoryPercentage:.7,yAxisID:'y'},{label:'Reams',data:[1696.64,1582.59,1608.72,726.93],backgroundColor:'transparent',borderColor:TEAL,borderWidth:2.5,type:'line',pointRadius:6,pointBackgroundColor:TEAL,yAxisID:'y2'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:{color:GRID},ticks:{color:TICK,font:{size:12}}},y:{grid:{color:GRID},ticks:{color:TICK,font:{size:11},callback:v=>v>=1000000?(v/1000000).toFixed(1)+'M':v>=1000?(v/1000).toFixed(0)+'k':v},title:{display:true,text:'Clicks',color:TICK,font:{size:10}}},y2:{position:'right',grid:{display:false},ticks:{color:TEAL,font:{size:11}},title:{display:true,text:'Reams',color:TEAL,font:{size:10}}}}}});
+
+const mtData=[['MSC',5,823780,164756],['A',1,123758,123758],['MEPC',7,780549,111507],['CCC',3,309201,103067],['HTW',4,382330,95582],['III',3,226871,75624],['PPR',4,304353,76118],['NCSR',3,230203,76735],['SSE',3,179660,61985],['FAL',3,165138,55046],['TC',3,149205,49734],['SDC',3,126969,44704],['LEG',3,122952,40984],['COUNCIL',6,188946,31491],['LC',3,76421,25474]];
+const tbody=document.getElementById('mtTbody');
+mtData.forEach(([m,s,t,a])=>{const tr=document.createElement('tr');tr.innerHTML=`<td>${m}</td><td class="r">${s}</td><td class="r">${t.toLocaleString()}</td><td class="r">${a.toLocaleString()}</td>`;tbody.appendChild(tr);});
+
+new Chart(document.getElementById('meetingAvg'),{type:'bar',data:{labels:mtData.map(d=>d[0]),datasets:[{label:'Avg clicks/session',data:mtData.map(d=>d[3]),backgroundColor:TEAL,borderRadius:3,barPercentage:.65,categoryPercentage:.8}]},options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:{color:GRID},ticks:{color:TICK,font:{size:11},callback:v=>v>=1000?(v/1000).toFixed(0)+'k':v}},y:{grid:{display:false},ticks:{color:TICK,font:{size:12}}}}}});
+
+function wpChart(id,labels,pages,wps){
+  new Chart(document.getElementById(id),{type:'bar',data:{labels,datasets:[{label:'Pages',data:pages,backgroundColor:BLUE,borderRadius:3,barPercentage:.5,categoryPercentage:.85,yAxisID:'y'},{label:'No. of WPs',data:wps,backgroundColor:TEAL,borderRadius:3,barPercentage:.5,categoryPercentage:.85,yAxisID:'y2'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:{color:GRID},ticks:{color:TICK,font:{size:9.5},maxRotation:50,autoSkip:false}},y:{grid:{color:GRID},ticks:{color:TICK,font:{size:10}},title:{display:true,text:'Pages',color:TICK,font:{size:9}}},y2:{position:'right',grid:{display:false},ticks:{color:TEAL,font:{size:10}},title:{display:true,text:'WPs',color:TEAL,font:{size:9}},suggestedMax:25}}}});
+}
+wpChart('wp2024',['C 132','C 133','CCC 10','FAL 48','HTW 10','III 10','LC 46','LEG 111','MEPC 81','MEPC 82','MSC 108','MSC 109','NCSR 11','PPR 11','SDC 10','SSE 10','TC 74'],[53,49,464,326,235,592,85,89,363,372,1111,553,227,226,176,162,92],[4,3,11,9,4,9,5,6,12,11,11,11,8,8,7,6,6]);
+wpChart('wp2025',['A 34','C 134','C 135','CCC 11','FAL 49','HTW 11','III 11','LC 47','LEG 112','MEPC 83','MEPC ES.2','MSC 110','NCSR 12','PPR 12','SDC 11','SSE 11'],[149,134,30,315,197,781,352,81,65,484,204,849,299,226,318,202],[2,4,1,9,10,11,7,5,6,14,5,11,9,7,10,6]);
+wpChart('wp2026',['FAL 50','HTW 12','LEG 113','MEPC 84','MSC 111','PPR 13','SDC 12','SSE 12'],[181,793,68,463,917,239,284,268],[8,16,5,11,19,7,7,6]);
+
+const wpD={2024:{labels:['C 132','C 133','CCC 10','FAL 48','HTW 10','III 10','LC 46','LEG 111','MEPC 81','MEPC 82','MSC 108','MSC 109','NCSR 11','PPR 11','SDC 10','SSE 10','TC 74'],pages:[53,49,464,326,235,592,85,89,363,372,1111,553,227,226,176,162,92],wps:[4,3,11,9,4,9,5,6,12,11,11,11,8,8,7,6,6]},2025:{labels:['A 34','C 134','C 135','CCC 11','FAL 49','HTW 11','III 11','LC 47','LEG 112','MEPC 83','MEPC ES.2','MSC 110','NCSR 12','PPR 12','SDC 11','SSE 11'],pages:[149,134,30,315,197,781,352,81,65,484,204,849,299,226,318,202],wps:[2,4,1,9,10,11,7,5,6,14,5,11,9,7,10,6]},2026:{labels:['FAL 50','HTW 12','LEG 113','MEPC 84','MSC 111','PPR 13','SDC 12','SSE 12'],pages:[181,793,68,463,917,239,284,268],wps:[8,16,5,11,19,7,7,6]}};
+const wpDiv=document.getElementById('wpTables');
+[2024,2025,2026].forEach(yr=>{
+  const d=wpD[yr],maxP=Math.max(...d.pages),maxW=Math.max(...d.wps);
+  const totalP=d.pages.reduce((a,b)=>a+b,0),totalW=d.wps.reduce((a,b)=>a+b,0);
+  const avgP=(totalP/d.labels.length).toFixed(0),avgW=(totalW/d.labels.length).toFixed(1);
+  const suffix=yr===2026?' (YTD)':'';
+  let rows=d.labels.map((l,i)=>`<tr><td>${l}</td><td><div class="bar-cell"><div class="bar-bg"><div class="bar-fill" style="width:${(d.pages[i]/maxP*100).toFixed(0)}%;background:#185FA5"></div></div><span class="bar-val">${d.pages[i]}</span></div></td><td><div class="bar-cell"><div class="bar-bg"><div class="bar-fill" style="width:${(d.wps[i]/maxW*100).toFixed(0)}%;background:#1D9E75"></div></div><span class="bar-val">${d.wps[i]}</span></div></td></tr>`).join('');
+  wpDiv.innerHTML+=`<p class="yr-label">${yr}${suffix}</p><table class="data-table"><thead><tr><th>Session</th><th>Pages</th><th>No. of WPs</th></tr></thead><tbody>${rows}<tr class="total"><td>Total</td><td class="r">${totalP.toLocaleString()}</td><td class="r">${totalW}</td></tr><tr class="avg"><td>Avg per session</td><td class="r">${avgP}</td><td class="r">${avgW}</td></tr></tbody></table>`;
+});
+
+new Chart(document.getElementById('wpAvgPages'),{type:'bar',data:{labels:['2024','2025','2026 YTD'],datasets:[{label:'Avg pages/session',data:[304,293,402],backgroundColor:[CORAL,CORAL,AMBER],borderRadius:4,barPercentage:.5,categoryPercentage:.65}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:{color:GRID},ticks:{color:TICK,font:{size:11}}},y:{grid:{color:GRID},ticks:{color:TICK,font:{size:11}},suggestedMin:240,suggestedMax:450}}}});
+new Chart(document.getElementById('wpAvgCount'),{type:'bar',data:{labels:['2024','2025','2026 YTD'],datasets:[{label:'Avg WPs/session',data:[7.7,7.3,9.9],backgroundColor:[TEAL,TEAL,TEAL_L],borderRadius:4,barPercentage:.5,categoryPercentage:.65}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:{color:GRID},ticks:{color:TICK,font:{size:11}}},y:{grid:{color:GRID},ticks:{color:TICK,font:{size:11}},suggestedMin:5,suggestedMax:12}}}});
+</script>
+</body>
+</html>
