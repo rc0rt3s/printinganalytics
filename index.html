@@ -273,7 +273,7 @@ new Chart(document.getElementById('annualClicks'),{type:'bar',data:{labels:['202
   }
 }]});
 
-const mtData=[['MEPC',4,892059,223015],['MSC',3,637869,212623],['A',2,247515,123758],['CCC',3,309202,103067],['HTW',4,382328,95582],['NCSR',3,230206,76735],['PPR',4,304473,76118],['III',3,226871,75624],['SSE',4,247939,61985],['COUNCIL',4,220438,55110],['FAL',4,203503,50876],['TC',3,149202,49734],['SDC',4,178818,44704],['LEG',4,163958,40990],['LC',3,76421,25474]];
+const mtData=[['MSC',5,637869,127574],['MEPC',7,892059,127437],['A',2,247515,123758],['CCC',3,309202,103067],['HTW',4,382328,95582],['NCSR',3,230206,76735],['PPR',4,304473,76118],['III',3,226871,75624],['SSE',4,247939,61985],['FAL',4,203503,50876],['TC',3,149202,49734],['SDC',4,178818,44704],['LEG',4,163958,40990],['COUNCIL',7,220438,31491],['LC',3,76421,25474]];
 const tbody=document.getElementById('mtTbody');
 mtData.forEach(([m,s,t,a])=>{const tr=document.createElement('tr');tr.innerHTML=`<td>${m}</td><td class="r">${s}</td><td class="r">${t.toLocaleString()}</td><td class="r">${a.toLocaleString()}</td>`;tbody.appendChild(tr);});
 
